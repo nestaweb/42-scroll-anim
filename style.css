@@ -157,6 +157,7 @@ section.headerAnim1 {
     justify-content: center;
     align-items: center;
     width: 100%;
+    position: relative;
     height: 100vh;
     flex-direction: column;
 }
@@ -231,5 +232,127 @@ section.headerAnim1 div.slider div.rightImg div.imgSlide img {
 }
 
 section.headerAnim2 {
-    margin-top: 80vh;
+    margin-top: 70vh;
+    background-color: #000;
+    background-image:  linear-gradient(#4d4d4d 1px, transparent 1px), linear-gradient(to right, #4d4d4d 1px, #000 1px);
+    background-size: 70px 70px;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 30;
+}
+
+section.headerAnim2 h2.headerAnimTitle {
+    text-align: center;
+    font-size: 3.5rem;
+    position: absolute;
+    top: 5vh;
+    width: 80vw;
+    left: 10vw;
+}
+
+section.headerAnim2 div.imgNetwork
+{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background-image: url("./assets/network1.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+section.headerAnim2 div.imgNetwork.visible {
+    opacity: 1;
+}
+
+section.headerAnim2 div.imgNetwork#network1 {
+    left: calc(3*70px);
+    top: calc(6*70px);
+}
+
+section.headerAnim2 div.imgNetwork#network2 {
+    left: calc(10*70px);
+    top: calc(5*70px);
+    background-image: url("./assets/network2.webp");
+}
+
+section.headerAnim2 div.imgNetwork#network3 {
+    left: calc(6*70px);
+    top: calc(7*70px);
+    background-image: url("./assets/network3.webp");
+}
+
+section.headerAnim2 div.imgNetwork#network4 {
+    left: calc(9*70px);
+    top: calc(9*70px);
+    background-image: url("./assets/network4.webp");
+}
+
+section.headerAnim2 div.imgNetwork#network5 {
+    left: calc(15*70px);
+    top: calc(6*70px);
+    background-image: url("./assets/network5.webp");
+}
+
+section.headerAnim2 div.imgNetwork#network6 {
+    left: calc(10*70px);
+    top: calc(2*70px);
+    background-image: url("./assets/network6.webp");
+}
+
+section.headerAnim2 div.imgNetwork#network7 {
+    left: calc(13*70px);
+    top: calc(5*70px);
+    background-image: url("./assets/network7.webp");
+}
+
+section.headerAnim2 div.imgNetwork#network8 {
+    left: calc(8*70px);
+    top: calc(4*70px);
+    background-image: url("./assets/network8.webp");
+}
+
+section.headerAnim2 div.imgNetwork#network9 {
+    left: calc(9*70px);
+    top: calc(7*70px);
+    background-image: url("./assets/network9.webp");
+}
+
+section.headerAnim2 div.imgNetwork#network10 {
+    left: calc(16*70px);
+    top: calc(10*70px);
+    background-image: url("./assets/network10.webp");
+}
+
+section.headerAnim2 div.imgNetwork#network11 {
+    left: calc(4*70px);
+    top: calc(3*70px);
+    background-image: url("./assets/network11.webp");
+}
+
+section.headerAnim2 div.imgNetwork#network12 {
+    left: calc(17*70px);
+    top: calc(4*70px);
+    background-image: url("./assets/network12.webp");
+}
+
+section.headerAnim2 div.imgNetwork#network13 {
+    left: calc(12*70px);
+    top: calc(8*70px);
+    background-image: url("./assets/network13.webp");
+}
+
+section.headerAnim2 div.imgNetwork#network14 {
+    left: calc(14*70px);
+    top: calc(3*70px);
+    background-image: url("./assets/network14.webp");
+}
+
+section.headerAnim2 div.imgNetwork#network15 {
+    left: calc(4*70px);
+    top: calc(9*70px);
+    background-image: url("./assets/network15.webp");
 }
