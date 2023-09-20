@@ -14,9 +14,9 @@ window.addEventListener("scroll", function() {
     if (animState == 2) {
         thirdTransition();
     }
-    // if (state == 3) {
-    //     fourthTransition();
-    // }
+    if (animState == 3) {
+        fourthTransition();
+    }
     // if (state == 4) {
     //     fifthTransition();
     // }
@@ -52,6 +52,40 @@ function secondTransition() {
 
 function thirdTransition() {
     if (window.scrollY >= window.innerHeight && window.scrollY <= window.innerHeight * 2) {
+        animState = 1;
+    }
+    else if (window.scrollY < window.innerHeight * 2.8){
+        document.querySelector(".headerAnim1").style.transform = `translateY(${window.scrollY - window.innerHeight * 2}px)`;
+        if (window.scrollY > window.innerHeight * 2 && window.scrollY < window.innerHeight * 2.2) {
+            document.querySelector(".slide3.textSlide").classList.remove("active");
+            document.querySelector(".slide3.imgSlide").classList.remove("active");
+            document.querySelector(".slide2.textSlide").classList.remove("active");
+            document.querySelector(".slide2.imgSlide").classList.remove("active");
+            document.querySelector(".slide1.textSlide").classList.add("active");
+            document.querySelector(".slide1.imgSlide").classList.add("active");
+        }
+        if (window.scrollY > window.innerHeight * 2.2 && window.scrollY < window.innerHeight * 2.4) {
+            document.querySelector(".slide1.textSlide").classList.remove("active");
+            document.querySelector(".slide1.imgSlide").classList.remove("active");
+            document.querySelector(".slide3.textSlide").classList.remove("active");
+            document.querySelector(".slide3.imgSlide").classList.remove("active");
+            document.querySelector(".slide2.textSlide").classList.add("active");
+            document.querySelector(".slide2.imgSlide").classList.add("active");
+        }
+        if (window.scrollY > window.innerHeight * 2.4 && window.scrollY < window.innerHeight * 2.6) {
+            document.querySelector(".slide2.textSlide").classList.remove("active");
+            document.querySelector(".slide2.imgSlide").classList.remove("active");
+            document.querySelector(".slide3.textSlide").classList.add("active");
+            document.querySelector(".slide3.imgSlide").classList.add("active");
+        }
+    }
+    if (window.scrollY > window.innerHeight * 2.8) {
+        animState = 3;
+    }
+}
+
+function fourthTransition() {
+    if (window.scrollY >= window.innerHeight * 2 && window.scrollY <= window.innerHeight * 2.8) {
         animState = 1;
     }
 }
