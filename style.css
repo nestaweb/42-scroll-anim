@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    height: 1000vh;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff00;
+    background-image:  linear-gradient(#4d4d4d 1px, transparent 1px), linear-gradient(to right, #4d4d4d 1px, #ffffff00 1px);
+    background-size: 70px 70px;
+}
+
+header div.innerHeader {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, #00000000 0%, #090a0f 80%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header div.innerHeader h1.heroTitle {
+    font-size: 4rem;
+    font-weight: 600;
+    z-index: 5;
+}
+
+header div.innerHeader span.backtitle {
+    font-size: 50rem;
+    font-weight: 700;
+    color: #1e1e1ec8;
+    position: absolute;
+    user-select: none;
+    z-index: -1;
+}
+
+header div.innerHeader p.heroDesc {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #c4c4c4;
+    z-index: 5;
+}
+
+header div.innerHeader div.containerGallery {
+    width: 90%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 5vh;
+    left: 5%;
+}
+
+header div.innerHeader div.containerGallery div.imgGallery {
+    width: 15vw;
+    height: 20vh;
+    background-image: url("./assets/header1.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.8;
+    border-radius: 2px;
+}
+
+header div.innerHeader div.containerGallery div.imgGallery#header0 {
+    background-image: url("./assets/header0.webp");
+}
+
+header div.innerHeader div.containerGallery div.imgGallery#header1 {
+    background-image: url("./assets/header1.webp");
+}
+
+header div.innerHeader div.containerGallery div.imgGallery#placeholder {
+    background: none;
+}
+
+header div.innerHeader div.containerGallery div.imgGallery#header2 {
+    background-image: url("./assets/header2.webp");
+    z-index: 10;
+    opacity: 0.9;
+    position: absolute;
+}
+
+header div.innerHeader div.containerGallery div.imgGallery#header3 {
+    background-image: url("./assets/header3.webp");
+}
+
+header div.innerHeader div.containerGallery div.imgGallery#header4 {
+    background-image: url("./assets/header4.webp");
+}
+
+button.primary {
+    background-color: #04809f;
+    border: 2px solid #04809f;
+    color: white;
+    padding: 1.5vh 1.5vw;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+button.secondary {
+    background-color: white;
+    border: 2px solid #c4c4c4;
+    padding: 1.5vh 1.5vw;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+section.headerAnim0 {
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    position: relative;
+    flex-direction: column;
+    gap: 5vh;
+    transition: opacity 0.5s ease-in-out;
+}
+
+section.headerAnim0 h2 {
+    font-size: 4rem;
+}
+
+section.headerAnim0 iframe {
+    height: 50vh;
+    width: 50vw;
+}
+
+section.headerAnim1 {
+    margin-top: 5vh;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+section.headerAnim1 h2 {
+    font-size: 4rem;
+}
