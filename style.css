@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -145,10 +143,21 @@ section.headerAnim0 h2 {
     font-size: 4rem;
 }
 
+/* section.headerAnim0 div.youtube-player {
+    height: 50vh;
+    width: 50vw;
+}
+
+section.headerAnim0 div.youtube-player iframe {
+    height: 50vh;
+    width: 50vw;
+} */
+
 section.headerAnim0 iframe {
     height: 50vh;
     width: 50vw;
 }
+
 
 section.headerAnim1 {
     margin-top: 10vh;

@@ -168,3 +168,37 @@ function fourthTransition() {
         }
     }
 }
+
+// Reduce weight iframe at loading
+
+
+
+// function labnolIframe(div) {
+//     var iframe = document.createElement('iframe');
+//     iframe.setAttribute('src', 'https://www.youtube.com/embed/' + div.dataset.id + '?autoplay=1&enablejsapi=1&disableKb=1&playsinline=0&start=0&controls=0&cc_load_policy=0&hl=en&modestbranding=1&rel=0&html5=1&iv_load_policy=3&origin=https%3A%2F%2F42.fr&widgetid=1');
+//     iframe.setAttribute('frameborder', '0');
+//     iframe.setAttribute('allowfullscreen', '1');
+//     div.parentNode.replaceChild(iframe, div);
+// }
+
+// function initYouTubeVideos() {
+//     var playerElements = document.querySelectorAll('.youtube-player');
+//     for (var n = 0; n < playerElements.length; n++) {
+//         var videoId = playerElements[n].dataset.id;
+//         var div = document.createElement('div');
+//         div.setAttribute('data-id', videoId);
+//         var thumbNode = document.createElement('img');
+//         thumbNode.src = '//i.ytimg.com/vi/ID/hqdefault.jpg'.replace('ID', videoId);
+//         div.appendChild(thumbNode);
+//         thumbNode.setAttribute("alt", "cover youtube discover 42")
+//         var playButton = document.createElement('div');
+//         playButton.setAttribute('class', 'play');
+//         div.appendChild(playButton);
+//         div.onclick = function () {
+//             labnolIframe(this);
+//         };
+//         playerElements[n].appendChild(div);
+//     }
+// }
+
+// document.addEventListener('DOMContentLoaded', initYouTubeVideos);
