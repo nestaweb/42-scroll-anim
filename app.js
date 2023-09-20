@@ -11,9 +11,9 @@ window.addEventListener("scroll", function() {
     if (animState == 1) {
         secondTransition();
     }
-    // if (state == 2) {
-    //     thirdTransition();
-    // }
+    if (animState == 2) {
+        thirdTransition();
+    }
     // if (state == 3) {
     //     fourthTransition();
     // }
@@ -44,5 +44,14 @@ function secondTransition() {
     }
     else if (window.scrollY < window.innerHeight * 2){
         document.querySelector(".headerAnim0").style.opacity = 1;
+    }
+    if (window.scrollY > window.innerHeight * 2) {
+        animState = 2;
+    }
+}
+
+function thirdTransition() {
+    if (window.scrollY >= window.innerHeight && window.scrollY <= window.innerHeight * 2) {
+        animState = 1;
     }
 }

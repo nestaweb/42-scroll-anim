@@ -151,7 +151,7 @@ section.headerAnim0 iframe {
 }
 
 section.headerAnim1 {
-    margin-top: 5vh;
+    margin-top: 10vh;
     z-index: 20;
     display: flex;
     justify-content: center;
