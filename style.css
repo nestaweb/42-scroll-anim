@@ -200,6 +200,9 @@ section.headerAnim1 div.slider div.leftText div.textSlide {
     opacity: 0;
     gap: 2vh;
     top: 0;
+    align-items: flex-start;
+    justify-content: center;
+    height: 80%;
     position: absolute;
     transition: opacity 0.4s ease-in-out;
 }
@@ -367,4 +370,115 @@ section.headerAnim2 div.imgNetwork#network15 {
     left: calc(4*70px);
     top: calc(9*70px);
     background-image: url("./assets/network15.webp");
+}
+
+section.headerAnim3 {
+    margin-top: 150vh;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 40;
+    padding-top: 5vh;
+}
+
+section.headerAnim3 h2.headerAnimTitle {
+    text-align: center;
+    font-size: 3.5rem;
+    width: 100vw;
+}
+
+section.headerAnim3 div.circle {
+    width: 80vh;
+    height: 80vh;
+    border-radius: 100%;
+    display: flex;
+    margin: 0 auto;
+    border: 3px solid rgba(182, 182, 182, 0.751);
+    margin-top: 5vh;
+    position: relative;
+    transform: scale(0.85);
+    transition: all 0.4s ease-in-out;
+}
+
+section.headerAnim3 div.circle div.value {
+    width: 15vh;
+    height: 15vh;
+    border-radius: 100%;
+    background-color: rgb(214, 214, 214);
+    position: absolute;
+    top: -7.5vh;
+    left: 32.5vh;
+}
+
+section.headerAnim3 div.circle div.value img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+    margin-left: 15%;
+    margin-top: 15%;
+}
+
+section.headerAnim3 div.circle div.value:nth-of-type(2) {
+    top: 32.5vh;
+    left: calc(80vh - 7.5vh);
+    transform: rotate(90deg);
+}
+
+section.headerAnim3 div.circle div.value:nth-of-type(3) {
+    top: 32.5vh;
+    left: -7.5vh;
+    transform: rotate(-90deg);
+}
+
+section.headerAnim3 div.circle div.value:nth-of-type(4) {
+    top: calc(80vh - 7.5vh);
+    left: 32.5vh;
+    transform: rotate(-180deg);
+}
+
+section.headerAnim3 div.circle div.value:nth-of-type(5) {
+    top: 5vh;
+    left: calc(80vh - 16vh);
+    transform: rotate(45deg);
+}
+
+section.headerAnim3 div.circle div.value:nth-of-type(6) {
+    top: 5vh;
+    left: 4vh;
+    transform: rotate(-45deg);
+}
+
+section.headerAnim3 div.circle div.value:nth-of-type(7) {
+    top: calc(80vh - 17.5vh);
+    left:  calc(80vh - 20vh);
+    transform: rotate(125deg);
+}
+
+section.headerAnim3 div.circle div.value:nth-of-type(8) {
+    top: calc(80vh - 17.5vh);
+    left: 4vh;
+    transform: rotate(-125deg);
+}
+
+section.headerAnim3 div.circle div.valueText {
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 2vh;
+    margin: 0 auto;
+    flex-direction: column;
+    transform: scale(1.15);
+    transition: all 0.4s ease-in-out;
+}
+
+section.headerAnim3 div.circle div.valueText h2 {
+    font-size: 1.5rem;
+}
+
+section.headerAnim3 div.circle div.valueText p {
+    font-size: 1.1rem;
+    color: #cecece;
 }
