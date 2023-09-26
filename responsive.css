@@ -147,4 +147,9 @@
         left: calc(3*70px);
         top: calc(9*70px);
     }
+
+    section.headerAnim3 div.circle {
+        transform: scale(0.5);
+        margin-left: -17.5vw;
+    }
 }

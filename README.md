@@ -10,7 +10,7 @@ Ce site web a été créé dans le cadre du concours du Repaire du Web, qui port
 
 ## Justification du Choix des Technologies
 
-Nous avons choisi d'utiliser des technologies simples et largement accessibles pour ce projet pour plusieurs raisons :
+J'ai choisi d'utiliser des technologies simples et largement accessibles pour ce projet pour plusieurs raisons :
 
 1. **Accessibilité**: Les technologies de base telles qu'HTML, CSS et JavaScript vanilla sont largement prises en charge par tous les navigateurs modernes, ce qui garantit une expérience utilisateur cohérente pour un public diversifié.
 
@@ -24,11 +24,9 @@ Nous avons choisi d'utiliser des technologies simples et largement accessibles p
 
 - **Design Responsive**: Le site est conçu de manière à être entièrement responsive, garantissant une expérience utilisateur optimale sur les appareils mobiles et de bureau.
 
-- **Navigation Intuitive**: La navigation du site est simple et intuitive, permettant aux utilisateurs de parcourir le contenu de manière fluide.
-
 ## Comment Exécuter le Projet Localement
 
 1. Clonez ce dépôt sur votre machine locale :
 
 ```bash
-git clone https://github.com/votre-utilisateur/repaire-du-web-animation-scroll.git
+git clone https://github.com/nestaweb/42-scroll-anim.git
