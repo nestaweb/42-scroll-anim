@@ -1,0 +1,75 @@
+@media screen and (max-width: 768px) {
+    header div.innerHeader h1.heroTitle {
+        text-align: center;
+        font-size: 3rem;
+    }
+    header div.innerHeader span.backtitle {
+        font-size: 30rem;
+    }
+
+    header div.innerHeader div.containerGallery div.imgGallery#header1 {
+        display: none;
+    }
+
+    header div.innerHeader div.containerGallery div.imgGallery#header3 {
+        display: none;
+    }
+
+    header div.innerHeader div.containerGallery div.imgGallery {
+        width: 25vw;
+    }
+
+    section.headerAnim0 h2 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    section.headerAnim0 iframe {
+        width: 90vw;
+    }
+
+    button.primary {
+        padding: 1.5vh 4.5vw;
+    }
+
+    section.headerAnim1 {
+        margin-top: 10vh;
+    }
+
+    section.headerAnim1 h2.headerTitle {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    section.headerAnim1 div.slider {
+        flex-direction: column;
+        margin-top: 5vh;
+    }
+
+    section.headerAnim1 div.slider div.leftText {
+        width: 90vw;
+    }
+
+    section.headerAnim1 div.slider div.leftText div.textSlide {
+        justify-content: flex-start;
+    }
+
+    section.headerAnim1 div.slider div.leftText div.textSlide h2.slideTitle {
+        font-size: 1.5rem;
+    }
+
+    section.headerAnim1 div.slider div.leftText div.textSlide p.slideDesc {
+        font-size: 1rem;
+    }
+
+    section.headerAnim1 div.slider div.rightImg {
+        width: 90vw;
+        margin-top: 5vh;
+    }
+
+    section.headerAnim2 h2.headerAnimTitle {
+        font-size: 2rem;
+        width: 90vw;
+        left: 5vw;
+    }
+}

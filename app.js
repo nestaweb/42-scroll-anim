@@ -30,7 +30,11 @@ function firstTransition() {
         }
         document.getElementById("header2").style.transform = `translateY(-${17.69* window.scrollY / (window.innerHeight / 2)}vh)`;
         document.getElementById("header2").style.height = `${20 + (80 * window.scrollY / window.innerHeight)}vh`;
-        document.getElementById("header2").style.width = `${15 + (85 * window.scrollY / window.innerHeight)}vw`;
+        if (window.innerWidth > 1024)
+            initialWidth = 15 + (85 * window.scrollY / window.innerHeight);
+        else
+            initialWidth = 25 + (90 * window.scrollY / window.innerHeight);
+        document.getElementById("header2").style.width = `${initialWidth}vw`;
     }
     if (window.scrollY > window.innerHeight) {
         animState = 1;
@@ -203,7 +207,7 @@ function fifthTransition() {
             document.querySelector(".circle").style.transform = "rotate(-180deg) scale(0.85)";
             document.querySelector(".valueText").style.transform = "rotate(180deg) scale(1.15)";
             document.querySelector(".valueTitle").innerText = "NO COURSES. NO TEACHERS. NO CLASSES.";
-            document.querySelector(".valueDesc").innerText = "Thanks to its innovative teaching methods, 42 proposes high-quality training without having to resort to lectures. Different from traditional methods, students learn programming through a peer-to-peer learning method. That means that students learn programming from and with each other. The pedagogic staff is ever present to support and motivate the students, rather than to teach. In order to progress at 42, teamwork is required. You have to rely on the community to learn things that you then share with others. You don’t learn programming by copying algorithms on paper!";
+            document.querySelector(".valueDesc").innerText = "Thanks to its innovative teaching methods, 42 proposes high-quality training without having to resort to lectures. Different from traditional methods, students learn programming through a peer-to-peer learning method. That means that students learn programming from and with each other. The pedagogic staff is ever present to support and motivate the students, rather than to teach. In order to progress at 42, teamwork is required.";
         }
         else if (window.scrollY < window.innerHeight * 8.2) {
             document.querySelector(".circle").style.transform = "rotate(-215deg) scale(0.85)";
@@ -215,7 +219,7 @@ function fifthTransition() {
             document.querySelector(".circle").style.transform = "rotate(-270deg) scale(0.85)";
             document.querySelector(".valueText").style.transform = "rotate(270deg) scale(1.15)";
             document.querySelector(".valueTitle").innerText = "NO DEGREE REQUIRED";
-            document.querySelector(".valueDesc").innerText = "Selection for entry at 42 is a positioning test that is not based on an academic record, standard test scores or a degree. We invite candidates who pass the first registration steps to spend a month with us in order to discover the way we work. This period offers them an opportunity to determine for themselves if 42’s methods suit them. Even though we do welcome those who are lo longer in school, we don’t encourage our applicants to stop their current studies. All applicants under 18 are required to have a high school degree or an equivalent.";
+            document.querySelector(".valueDesc").innerText = "Selection for entry at 42 is a positioning test that is not based on an academic record, standard test scores or a degree. We invite candidates who pass the first registration steps to spend a month with us in order to discover the way we work. This period offers them an opportunity to determine for themselves if 42’s methods suit them. Even though we do welcome those who are lo longer in school, we don’t encourage our applicants to stop their current studies.";
         }
         else if (window.scrollY < window.innerHeight * 8.8) {
             document.querySelector(".circle").style.transform = "rotate(-315deg) scale(0.85)";
@@ -226,33 +230,25 @@ function fifthTransition() {
     }
 }
 
+// Intersection Observer API on div.innerHeader and add class .anim on .innerHeader
 
-// function labnolIframe(div) {
-//     var iframe = document.createElement('iframe');
-//     iframe.setAttribute('src', 'https://www.youtube.com/embed/' + div.dataset.id + '?autoplay=1&enablejsapi=1&disableKb=1&playsinline=0&start=0&controls=0&cc_load_policy=0&hl=en&modestbranding=1&rel=0&html5=1&iv_load_policy=3&origin=https%3A%2F%2F42.fr&widgetid=1');
-//     iframe.setAttribute('frameborder', '0');
-//     iframe.setAttribute('allowfullscreen', '1');
-//     div.parentNode.replaceChild(iframe, div);
-// }
+const innerHeader = document.querySelector(".headerAnim4 .innerHeader");
 
-// function initYouTubeVideos() {
-//     var playerElements = document.querySelectorAll('.youtube-player');
-//     for (var n = 0; n < playerElements.length; n++) {
-//         var videoId = playerElements[n].dataset.id;
-//         var div = document.createElement('div');
-//         div.setAttribute('data-id', videoId);
-//         var thumbNode = document.createElement('img');
-//         thumbNode.src = '//i.ytimg.com/vi/ID/hqdefault.jpg'.replace('ID', videoId);
-//         div.appendChild(thumbNode);
-//         thumbNode.setAttribute("alt", "cover youtube discover 42")
-//         var playButton = document.createElement('div');
-//         playButton.setAttribute('class', 'play');
-//         div.appendChild(playButton);
-//         div.onclick = function () {
-//             labnolIframe(this);
-//         };
-//         playerElements[n].appendChild(div);
-//     }
-// }
+const innerHeaderOptions = {
+    rootMargin: "-100px 0px 0px 0px"
+};
 
-// document.addEventListener('DOMContentLoaded', initYouTubeVideos);
+const innerHeaderObserver = new IntersectionObserver(function(entries, innerHeaderObserver) {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            document.querySelector(".headerAnim4 .innerHeader").classList.remove("anim");
+            document.querySelector(".headerAnim4 h2").classList.remove("active");
+        } else {
+            document.querySelector(".headerAnim4 .innerHeader").classList.add("anim");
+            document.querySelector(".headerAnim4 h2").classList.add("active");
+        }
+    });
+}
+, innerHeaderOptions);
+
+innerHeaderObserver.observe(innerHeader); 
