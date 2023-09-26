@@ -72,4 +72,79 @@
         width: 90vw;
         left: 5vw;
     }
+
+    section.headerAnim2 div.imgNetwork#network1 {
+        left: calc(1*70px);
+        top: calc(1*70px);
+    }
+    
+    section.headerAnim2 div.imgNetwork#network2 {
+        left: calc(2*70px);
+        top: calc(2*70px);
+    }
+    
+    section.headerAnim2 div.imgNetwork#network3 {
+        left: calc(3*70px);
+        top: calc(1*70px);
+    }
+    
+    section.headerAnim2 div.imgNetwork#network4 {
+        left: calc(1*70px);
+        top: calc(3*70px);
+    }
+    
+    section.headerAnim2 div.imgNetwork#network5 {
+        left: calc(2*70px);
+        top: calc(4*70px);
+    }
+    
+    section.headerAnim2 div.imgNetwork#network6 {
+        left: calc(3*70px);
+        top: calc(3*70px);
+    }
+    
+    section.headerAnim2 div.imgNetwork#network7 {
+        left: calc(1*70px);
+        top: calc(5*70px);
+    }
+    
+    section.headerAnim2 div.imgNetwork#network8 {
+        left: calc(2*70px);
+        top: calc(6*70px);
+    }
+    
+    section.headerAnim2 div.imgNetwork#network9 {
+        left: calc(3*70px);
+        top: calc(5*70px);
+    }
+    
+    section.headerAnim2 div.imgNetwork#network10 {
+        left: calc(1*70px);
+        top: calc(7*70px);
+    }
+    
+    section.headerAnim2 div.imgNetwork#network11 {
+        left: calc(2*70px);
+        top: calc(8*70px);
+    }
+    
+    section.headerAnim2 div.imgNetwork#network12 {
+        left: calc(3*70px);
+        top: calc(7*70px);
+    }
+    
+    section.headerAnim2 div.imgNetwork#network13 {
+        left: calc(1*70px);
+        top: calc(9*70px);
+    }
+    
+    section.headerAnim2 div.imgNetwork#network14 {
+        left: calc(2*70px);
+        top: calc(10*70px);
+    }
+    
+    section.headerAnim2 div.imgNetwork#network15 {
+        left: calc(3*70px);
+        top: calc(9*70px);
+    }
 }
